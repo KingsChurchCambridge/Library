@@ -7,7 +7,9 @@ import themeConfig from './config/theme';
 const config: Config = {
   title: "Library | King's Church Cambridge",
   favicon: 'favicon.ico',
-  url: process.env.CI_PAGES_URL || 'http://localhost:3000',
+  url: process.env.CI
+    ? 'https://kingschurchcambridge.github.io/Library'
+    : 'http://localhost:3000',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
