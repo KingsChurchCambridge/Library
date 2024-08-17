@@ -1,0 +1,87 @@
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-font-size-base: 105%;
+  --ifm-h1-font-size: 2rem;
+  --ifm-h2-font-size: 1.75rem;
+  --ifm-h3-font-size: 1.5rem;
+  --ifm-h4-font-size: 1.25rem;
+  --ifm-h5-font-size: 1.1rem;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1669px) {
+  div.col:first-of-type {
+    padding: 0 1.5rem !important;
+  }
+}
+
+code {
+  color: orange;
+  padding: 0.2em;
+  font-size: 90%;
+}
+
+pre code {
+  span.token.parameter.variable {
+    color: #f0f07d !important;
+  }
+
+  span.token.constant,
+  span.token.function,
+  span.token.property {
+    color: #a1d5ff !important;
+  }
+
+  span.token.variable {
+    color: #ff7878 !important;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+
+  li {
+    padding-inline-start: 0.3em;
+  }
+
+  ol {
+    list-style-type: lower-alpha;
+
+    ol {
+      list-style-type: lower-roman;
+
+      ol {
+        list-style-type: decimal;
+      }
+    }
+  }
+}
+
+ul {
+  list-style-type: disc;
+
+  ul {
+    list-style-type: circle;
+
+    ul {
+      list-style-type: square;
+    }
+  }
+}
+
+div.inline-toc ul {
+  @extend ul;
+  font-weight: bold;
+  line-height: 1.4rem;
+  padding-left: 1em;
+}
+
+p img {
+  max-width: 90%;
+}
