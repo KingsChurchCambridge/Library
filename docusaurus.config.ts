@@ -11,9 +11,9 @@ const config: Config = {
   title: "Library | King's Church Cambridge",
   favicon: 'favicon.ico',
   url: process.env.CI
-    ? 'https://kingschurchcambridge.github.io/Library/'
+    ? 'https://kingschurchcambridge.github.io'
     : 'http://localhost:3000',
-  baseUrl: `/${projectName}/`,
+  baseUrl: process.env.CI ? `/${projectName}/` : '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   markdown: { format: 'mdx' },
