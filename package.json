@@ -5,9 +5,9 @@
   "prettier": "@zzavidd/prettier-config",
   "scripts": {
     "start": "docusaurus start",
-    "build": "docusaurus build",
-    "clean": "docusaurus clear",
-    "serve": "docusaurus serve"
+    "build": "docusaurus build --out-dir docs",
+    "serve": "docusaurus serve --out-dir",
+    "clean": "docusaurus clear"
   },
   "dependencies": {
     "@docusaurus/core": "3.5.2",
