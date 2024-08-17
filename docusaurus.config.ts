@@ -8,7 +8,7 @@ const config: Config = {
   title: "Library | King's Church Cambridge",
   favicon: 'favicon.ico',
   url: process.env.CI
-    ? 'https://kingschurchcambridge.github.io/Library'
+    ? 'https://kingschurchcambridge.github.io/Library/'
     : 'http://localhost:3000',
   baseUrl: '/',
   onBrokenLinks: 'throw',
