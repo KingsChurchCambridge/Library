@@ -8,7 +8,7 @@ const presets: Config['presets'] = [
       blog: false,
       docs: {
         path: './src',
-        routeBasePath: '/',
+        routeBasePath: process.env.CI ? '/Library' : '/',
         sidebarPath: './sidebars.ts',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
